@@ -16,35 +16,42 @@
     <body>
         <!-- Header dari Page Home -->
         <header>
+
+            <!--Mobile Navigation-->
             <button class="menu-icon" onclick="toggleMenu()">☰</button>
+
+            
             <script>
                 function toggleMenu() {
                     const mobileNav = document.getElementById("mobileNav");
                     mobileNav.style.display = mobileNav.style.display === "block" ? "none" : "block";
                 }
             </script>
+            
+            <section class="mobile-header-container">
+                <nav class="mobile-nav" id="mobileNav">
+                    <ul>                    
+                        <li>
+                            <a href="#home" onclick="toggleMenu()">Home</a>
+                        </li>
+                        <li>
+                            <a href="#news-article" onclick="toggleMenu()">Article</a>
+                        </li>
+                        <li>
+                            <a href="#about" onclick="toggleMenu()">About</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
 
-            <nav class="mobile-nav" id="mobileNav">
-                <ul>                    
-                    <li>
-                        <a href="#home" onclick="toggleMenu()">Home</a>
-                    </li>
-                    <li>
-                        <a href="#news-article" onclick="toggleMenu()">Article</a>
-                    </li>
-                    <li>
-                        <a href="#about" onclick="toggleMenu()">About</a>
-                    </li>
-                </ul>
-            </nav>
-
+            <!--Desktop Navigation-->
             <section class="header-container">
                 <!--Logo Web-->
                 <a href="#home">
                     <img src="asset/logo.png" alt="Skycast">
                 </a>
                 <!--List Navigasi-->
-                <nav>
+                <nav class="desktop-nav">
                     <ul>
                         <li>
                             <a href="#home">Home</a>
@@ -61,20 +68,36 @@
         </header>
 
         <main>
-            <!--Section Banner Home Pages-->
-            <section id="banner-home" class="banner-image">
-                <div id="form-section" class="banner-form">
-                    <h1>Search Location!</h1>
-                    <form class="form" id="form" action="/submit" method="POST">
-                        <input type="text" id="region" name="region" placeholder="Search Your City!">
-                        <button type="submit">Submit</button>
-                    </form>
+            <!--Section Banner Home Page-->
+            <section id="banner" class="banner-image">
+                <div class="banner-container">
+                    <div class="banner-hero" id="item-1"></div>
+                    <div class="banner-hero" id="item-2">
+                        <h1>Search<br>Location!</h1>
+                        <form class="form" id="form" action="/submit" method="POST">
+                            <input type="text" id="region" name="region" placeholder="Search Your City!">
+                            <button type="submit">Submit</button>
+                        </form>
+                        <ul class="list-information">
+                            <li id="list-search">Search by Street, City, Country</li>
+                            <li id="list-time">Real-Time Information</li>
+                        </ul>
+                    </div>
+                    <div class="banner-hero" id="item-3">
+                        <p>Skycast will help you forecasting weather in your location!<br>Just search your street, city, or country!</p>
+                    </div>
                 </div>
             </section>
 
             <!--Section News-->
             <section id="news-article" class="news-article">
-                <h2>Weather Breaking News</h2>
+                <div class="news-article-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                    </svg>                  
+                    <h2>Weather Breaking News</h2>
+                </div>
+
                 <article class="news-card">
                     <!--List Article-->
                     <ul class="card">
@@ -99,7 +122,10 @@
 
             <section id="form-suggestion" class="suggestion">
                 <div class="suggestion-image">
-                    <img src="asset/suggestion.png" alt="Suggestion Form">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="./asset/suggestion-2.png">
+                        <img src="./asset/suggestion.png" alt="Responsive Image Example">
+                    </picture>
                 </div>
                 <div class="suggestion-container">
                     <h2>Suggestion</h2>
