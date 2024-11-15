@@ -5,7 +5,7 @@
 Welcome to **Skycast**, a weather forecast website designed to help users easily access reliable and up-to-date weather information. This project is automatically deployed and hosted via Netlify, making use of GitHub integration for seamless updates.
 
 ## Website Link
-[Skycast Weather Forecast Website](skycast.site/)
+[Skycast Weather Forecast Website](http://www.skycast.site/)
 
 ## Project Overview
 
@@ -52,3 +52,6 @@ With these steps completed, Skycast will be live on your custom domain with auto
 ## Additional Resources
 - [Netlify Documentation](https://docs.netlify.com/)
 - [GitHub Pages Documentation](https://docs.github.com/en/pages)
+
+# Skycast Lighthouse Performance
+(asset/lighthouse.png)
