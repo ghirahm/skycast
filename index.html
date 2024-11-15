@@ -8,6 +8,8 @@
         <meta name="keywords" content="Weather, Forecast, Sky, City">
         <meta name="description" content="Real-Time forecasting Weather in Your Place">
         <meta name="author" content="Ghirah Madani">
+
+        <title>Skycast - Weather Forecast</title>
         <!--Icon-->
         <link rel="icon" href="asset/favicon.ico" type="image/x-icon">
 
@@ -244,8 +246,6 @@
             <section id="information" class="basic-layout">
                 <div class="basic-container">
                     <div class="information-carousel">
-                        <!-- <img src="asset/background.jpg"> -->
-
                         <input type="radio" name="carousel" id="slide1" checked>
                         <input type="radio" name="carousel" id="slide2">
                         <input type="radio" name="carousel" id="slide3">
@@ -294,7 +294,7 @@
                     <div class="article-list">
                         <div class="article-card">
                             <div class="article-card-information">
-                                <img src="asset/article-1.jpg">
+                                <img src="asset/article-1.jpg" alt="article-1">
                                 <div class="article-card-title">
                                     <div class="article-card-author">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -314,7 +314,7 @@
                         </div>
                         <div class="article-card">
                             <div class="article-card-information">
-                                <img src="asset/article-2.jpg">
+                                <img src="asset/article-2.jpg" alt="article-2">
                                 <div class="article-card-title">
                                     <div class="article-card-author">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -334,7 +334,7 @@
                         </div>
                         <div class="article-card">
                             <div class="article-card-information">
-                                <img src="asset/article-3.jpg">
+                                <img src="asset/article-3.jpg" alt="article-3">
                                 <div class="article-card-title">
                                     <div class="article-card-author">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -366,10 +366,10 @@
                         <h3>Our Beloved Partner</h3>
                     </div>
                     <div class="partner-image">
-                        <img src="/asset/partner-1.png">
-                        <img src="/asset/partner-2.svg">
-                        <img src="/asset/partner-3.png">
-                        <img src="/asset/partner-4.svg">
+                        <img src="/asset/partner-1.png" alt="partner-1">
+                        <img src="/asset/partner-2.svg" alt="partner-2">
+                        <img src="/asset/partner-3.png" alt="partner-3">
+                        <img src="/asset/partner-4.svg" alt="partner-4">
                     </div>
                 </div>
             </Section>
@@ -391,10 +391,9 @@
                                 <input type="text" id="name" name="name"><br>
 
                                 <label for="gender" id="gender" name="gender">What is Your Gender?</label><br>
-                                <input type="radio" name="gender" value="male"> Male
-                                <input type="radio" name="gender" value="female"> Female<br>
-
-                                <label for="suggestion" id="suggestion" name="suggestion">What is Your Suggestion?</label>
+                                <input type="radio" name="gender" id="male" value="male" > Male <label for="male" class="male-label"></label>
+                                <input type="radio" name="gender" id="female" value="female"> Female<br><label for="female" class="female-label"></label>
+                                <label for="comments" id="suggestion" name="suggestion">What is Your Suggestion?</label>
                                 <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
                                 
                                 <input type="submit" value="Submit">

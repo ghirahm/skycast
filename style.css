@@ -1,5 +1,4 @@
 @import url('styles/font.css');
-@import url('styles/colors.css');
 
 /*=======================*/
 /*   COLOR STYLE FILES   */
@@ -8,8 +7,8 @@
 /* Colors */
 
 :root {
-    --first-color: #FFD414;
-    --second-color: #F7931E;
+    --first-color: #F7931E;
+    --second-color: #f7e11e;
     --white-color: #ffffff;
     --black-color: #000000;
     --dark-grey-color: #3b3b3b;
@@ -1047,6 +1046,13 @@ input#slide5:checked ~ .carousel-navigation label[for="slide5"] {
     color: var(--first-color);
     background-color: var(--white-color);
     border: 1px solid var(--first-color);
+}
+
+.suggestion-form .female-label {
+    display: none;
+}
+.suggestion-form .male-label {
+    display: none;
 }
 
 /* |Button| */
