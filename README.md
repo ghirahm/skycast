@@ -2,49 +2,53 @@
 
 ![Skycast Logo](asset/logo.png)
 
-Sky Cast adalah aplikasi web yang menyediakan cara yang mudah bagi pengguna untuk mendapatkan perkiraan cuaca untuk minggu yang akan datang. Aplikasi ini mencakup tautan navigasi, pembaruan berita cuaca, dan formulir umpan balik untuk saran pengguna.
+Welcome to **Skycast**, a weather forecast website designed to help users easily access reliable and up-to-date weather information. This project is automatically deployed and hosted via Netlify, making use of GitHub integration for seamless updates.
 
-Sky Cast dapat diakses melalui 
+## Website Link
+[Skycast Weather Forecast Website](skycast.site/)
 
-## HTML Tags yang Digunakan
+## Project Overview
 
-Berikut adalah daftar tag HTML yang digunakan dalam kode ini beserta fungsinya:
+Skycast is a simple yet powerful tool for checking weather forecasts. It aims to provide users with accurate weather updates and insights to help them plan their day better. With an intuitive interface, users can find weather conditions such as temperature, humidity, wind speed, and more for their selected location.
 
-- `<html>`: Elemen root yang berisi semua elemen HTML lainnya.
-- `<head>`: Berisi informasi meta tentang dokumen HTML, seperti judul dan karakter set.
-- `<meta charset="UTF-8">`: Menentukan pengkodean karakter untuk dokumen HTML (UTF-8).
-- `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Memastikan skala yang tepat di perangkat seluler.
-- `<title>`: Mengatur judul halaman web yang ditampilkan di tab browser.
+# Skycast Deployment Guide
 
-### Struktur Badan Utama
+This guide explains how to deploy the **Skycast** weather forecast website using Netlify. Follow the steps below to set up an automated deployment from GitHub, connect a custom domain, and manage DNS.
 
-- `<body>`: Konten utama dokumen HTML.
-  
-  - `<header>`: Berisi konten header halaman, termasuk:
-    - `<img>`: Menampilkan logo situs web dengan atribut `src` dan `alt` untuk sumber gambar dan teks alternatif.
-    - `<nav>`: Mengelompokkan tautan navigasi dalam daftar tak terurut.
-    - `<ul>`: Membuat daftar tak terurut untuk item navigasi.
-    - `<li>`: Mendefinisikan item daftar individu dalam bilah navigasi.
-    - `<a>`: Membuat hyperlink untuk navigasi antar bagian seperti "Home," "Article," dan "About."
+## Step 1: Sign Up for Netlify & Connect to GitHub
 
-### Bagian Konten
+1. Go to [Netlify](https://www.netlify.com/) and click **Sign Up**.
+2. Choose to sign up with your email or directly link your GitHub account (recommended for easier setup).
+3. Once signed up, log in to your Netlify dashboard.
+4. In the dashboard, click **New site from Git** to start the deployment process.
+5. Choose **GitHub** as your Git provider and authorize Netlify to access your GitHub repositories.
+6. Select the repository for Skycast that you want to deploy and choose the correct branch (usually `main` or `master`).
+7. Click **Deploy Site** to start the deployment process.
 
-- `<main>`: Membungkus konten utama halaman web.
+## Step 2: Set Up Auto Deployment from GitHub
 
-  - `<section>`: Digunakan untuk mengelompokkan konten menjadi berbagai bagian:
-    - `#banner-home`: Berisi pesan sambutan untuk Sky Cast.
-    - `#form-section`: Mengandung formulir pencarian di mana pengguna dapat memasukkan lokasi untuk mendapatkan perkiraan cuaca.
-    - `#news-article`: Berisi artikel dengan berita cuaca terbaru dan tautan ke artikel lengkap.
-    - `#form-suggestion`: Formulir umpan balik di mana pengguna dapat mengirimkan saran.
+Netlify allows automatic deployments from GitHub, meaning any changes you push to the connected branch will automatically rebuild and update your Skycast website. Here’s how it works:
 
-### Elemen Formulir
+1. After connecting the GitHub repository, every new commit or push to the selected branch will trigger a Netlify build.
+2. You can view the deployment progress and logs under the **Deploys** tab in your Netlify dashboard.
+3. If there are any errors or issues with the build, Netlify will display them in the logs for troubleshooting.
 
-- `<form>`: Membuat formulir untuk mengumpulkan input pengguna.
-  - `<label>`: Mendefinisikan label untuk bidang formulir, seperti "Region" dan "Suggestion."
-  - `<input>`: Menerima berbagai jenis input pengguna, seperti teks, tombol radio, dan tombol kirim.
-  - `<textarea>`: Menyediakan area input multi-baris untuk pengguna mengetik saran.
-  - `<button>` dan `<input type="submit">`: Keduanya digunakan untuk mengirimkan formulir.
+This setup ensures that Skycast is always up to date with the latest changes from your GitHub repository.
 
-### Footer
+## Step 3: Connect a Custom Domain & Configure DNS
 
-- `<footer>`: Berisi informasi footer, termasuk nama aplikasi dan hak cipta.
+To give Skycast a personalized domain, follow these steps:
+
+1. In your Netlify dashboard, navigate to **Domain settings**.
+2. Click **Add custom domain** and enter the domain name you purchased.
+3. Netlify will display the DNS records (usually CNAME and A records) required for the connection.
+4. Go to your domain provider’s DNS settings and add the provided Netlify records to point your domain to Netlify.
+5. Once the DNS records are configured, allow a few minutes for propagation. Netlify will automatically provide an SSL certificate to secure your custom domain.
+
+With these steps completed, Skycast will be live on your custom domain with automatic SSL for secure access.
+
+---
+
+## Additional Resources
+- [Netlify Documentation](https://docs.netlify.com/)
+- [GitHub Pages Documentation](https://docs.github.com/en/pages)

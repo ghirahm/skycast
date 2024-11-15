@@ -4,14 +4,14 @@
 
 /* Font Heading */
 @font-face {
-    font-family: 'Font Heading';
+    font-family: 'Coolvetica';
     font-style: normal;
-    src: url('../fonts/moon_get-Heavy.ttf') format('truetype');
+    src: url('../fonts/coolvetica\ rg.otf') format('opentype');
 }
 
 /* Font Secondary */
 @font-face {
-    font-family: 'Font Secondary';
+    font-family: 'Poppins';
     font-style: normal;
     src: url('../fonts/Poppins-Regular.ttf') format('truetype');
 }
