@@ -1043,16 +1043,16 @@ input#slide5:checked ~ .carousel-navigation label[for="slide5"] {
 }
 
 .suggestion-form input[type="submit"]:hover {
-    color: var(--first-color);
+    color: var(--black-color);
     background-color: var(--white-color);
-    border: 1px solid var(--first-color);
+    border: 1px solid var(--black-color);
 }
 
 .suggestion-form .female-label {
-    display: none;
+    display: inline;
 }
 .suggestion-form .male-label {
-    display: none;
+    display: inline;
 }
 
 /* |Button| */
