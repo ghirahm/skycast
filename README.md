@@ -54,4 +54,4 @@ With these steps completed, Skycast will be live on your custom domain with auto
 - [GitHub Pages Documentation](https://docs.github.com/en/pages)
 
 # Skycast Lighthouse Performance
-(asset/lighthouse.png)
+![LightHousePerformance](asset/lighthouse.png)
